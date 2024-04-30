@@ -20,7 +20,8 @@ public class Interest {
     private Long id;
     private String content;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    private User user;
+//    @ManyToOne //many interests can be owned by one user. -> birçok ilgi alanı tek bir user'a ait olabilir.
+//    private User user;
+    private Long userId;
 
 }
